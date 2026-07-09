@@ -1,0 +1,199 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0b1020;
+color:#fff;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#111827;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,.5);
+}
+
+.navbar{
+width:95%;
+margin:auto;
+height:70px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:26px;
+font-weight:700;
+color:#fff;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+}
+
+.nav-links li{
+margin-left:30px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#fff;
+font-size:17px;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#7c5cff;
+}
+
+.menu-btn{
+display:block;
+font-size:28px;
+cursor:pointer;
+color:#fff;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:120px 8%;
+background:#0b1020;
+}
+
+.hero-text{
+max-width:500px;
+}
+
+.hero-text h1{
+font-size:60px;
+line-height:1.2;
+margin-bottom:20px;
+}
+
+.hero-text span{
+color:#7c5cff;
+}
+
+.hero-text p{
+font-size:18px;
+line-height:30px;
+margin-bottom:30px;
+color:#d1d5db;
+}
+
+.btn{
+display:inline-block;
+padding:14px 35px;
+background:linear-gradient(90deg,#4f46e5,#a855f7);
+color:#fff;
+text-decoration:none;
+border-radius:30px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+.hero-image img{
+width:500px;
+max-width:100%;
+}
+
+section{
+padding:90px 8%;
+text-align:center;
+}
+
+section h2{
+font-size:38px;
+margin-bottom:40px;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.card{
+background:#ffffff;
+color:#111;
+width:300px;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.25);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card i{
+font-size:45px;
+color:#7c5cff;
+margin-bottom:20px;
+}
+
+footer{
+background:#111827;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:768px){
+
+.menu-btn{
+display:block;
+}
+
+.nav-links{
+display:none;
+position:absolute;
+top:70px;
+left:0;
+width:100%;
+background:#111827;
+flex-direction:column;
+text-align:center;
+padding:20px 0;
+}
+
+.nav-links.active{
+display:flex;
+}
+
+.nav-links li{
+margin:15px 0;
+}
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-text h1{
+font-size:42px;
+}
+
+.hero-image img{
+width:320px;
+margin-top:30px;
+}
+
+}
